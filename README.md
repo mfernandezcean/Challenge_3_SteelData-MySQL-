@@ -25,3 +25,21 @@ FROM country;
 ![dwqq2](https://github.com/mfernandezcean/Challenge_3_SteelData-MySQL-/assets/105746149/4e1cfdb9-bd06-471f-93d0-764ad3d3c266)
 
  2. What is the total number of customers in the customers table?
+
+```
+SELECT COUNT( DISTINCT customer_id) AS Number_of_Customers
+FROM customers;
+```
+
+![qwdwqdwdq](https://github.com/mfernandezcean/Challenge_3_SteelData-MySQL-/assets/105746149/d28d1850-e954-433c-ae95-3ec269939856)
+
+ 3. What is the average age of customers who can receive marketing emails (can_email is set to 'yes')?
+
+```
+SELECT 
+ROUND(AVG(age))AS Average_Age_Client
+FROM customers
+WHERE can_email = 'yes' ;
+```
+
+![wdqwqdxzc](https://github.com/mfernandezcean/Challenge_3_SteelData-MySQL-/assets/105746149/61ee8b4a-77d4-4415-a90b-99c6f76f07ae)
