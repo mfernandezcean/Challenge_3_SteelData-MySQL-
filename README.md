@@ -12,3 +12,16 @@ Challenge 3 of Steel Data
  8. What is the date of the latest order made by a customer who can receive marketing emails?
  9. What is the name of the country with the highest number of orders?
  10. What is the average age of customers who made orders in the 'vitamins' product category? 
+
+Answers
+
+
+1. What are the names of all the countries in the country table?
+
+```
+SELECT country_name
+FROM country;
+```
+![dwqq2](https://github.com/mfernandezcean/Challenge_3_SteelData-MySQL-/assets/105746149/4e1cfdb9-bd06-471f-93d0-764ad3d3c266)
+
+ 2. What is the total number of customers in the customers table?
