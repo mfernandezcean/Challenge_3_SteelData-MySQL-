@@ -43,3 +43,15 @@ WHERE can_email = 'yes' ;
 ```
 
 ![wdqwqdxzc](https://github.com/mfernandezcean/Challenge_3_SteelData-MySQL-/assets/105746149/61ee8b4a-77d4-4415-a90b-99c6f76f07ae)
+
+ 4. How many orders were made by customers aged 30 or older?
+
+```
+SELECT COUNT(o.order_id) AS Orders
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id
+WHERE c.age > 29;
+```
+
+![qwdwdqdwqdqw](https://github.com/mfernandezcean/Challenge_3_SteelData-MySQL-/assets/105746149/2b018199-65f5-4ea6-9539-bab12ce57b73)
